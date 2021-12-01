@@ -29,11 +29,11 @@ We have saved all our results under `RData/`. These can be used to generate the 
 
 ```
 RData/
-├── comparison		# comparison to MCMC
+├── comparison          # comparison to MCMC
 ├── data                # real datasets
 ├── models              # models fit to real datasets
-├── sensitivity		# sensitivity analysis
-└── simulations		# simulation study, comparison to other methods
+├── sensitivity         # sensitivity analysis
+└── simulations         # simulation study, comparison to other methods
 ```
 
 ## Simulation study
