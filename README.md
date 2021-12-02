@@ -4,9 +4,6 @@
 
 ```
 git clone https://github.com/mkomod/svb.exp.git
-```
-
-```
 cd svb.exp
 guzip data/*
 ```
