@@ -15,19 +15,17 @@ guzip data/*
 
 ```
 svb.exp/
-├── data		# compressed datasets
+├── data		# datasets
 ├── figures		# saved figure (initially empty)
-├── logs		# logs for scripts
 ├── R			# R code for experiments
-├── RData		# saved results
-└── scripts		# cluster scripts
+└── RData		# saved results
 ```
 
 ## Simulation study
 
 All simulations can be replicated by running
 
-**Highly recommended that these scripts are ran on a cluster**. Accompanying PBS scripts can be found under `scripts/`
+**Highly recommended that these scripts are ran on a cluster**.
 
 ```
 Rscript R/simulations/01-mcmc_comparison.R
