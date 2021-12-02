@@ -76,3 +76,11 @@ RData/
 └── simulations         # simulation study
 ```
 
+## Datasets
+
+The real datasets used are publicly avaialable and can be downlaoded from
+    
+ - [Ovarian cancer dataset](https://xenabrowser.net/datapages/?cohort=GDC%20TCGA%20Ovarian%20Cancer%20(OV)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443)
+ - [Breast cancer dataset](https://xenabrowser.net/datapages/?cohort=Breast%20Cancer%20(Yau%202010)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443)
+
+These can also be found under `data/`.
