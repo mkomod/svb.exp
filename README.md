@@ -23,22 +23,11 @@ svb.exp/
 └── scripts		# cluster scripts
 ```
 
-## Results
-
-We have saved all our results under `RData/`. These can be used to generate the figures and table from our paper. The following sections describe how our results can be reproduced
-
-```
-RData/
-├── comparison          # comparison to MCMC
-├── data                # real datasets
-├── models              # models fit to real datasets
-├── sensitivity         # sensitivity analysis
-└── simulations         # simulation study, comparison to other methods
-```
-
 ## Simulation study
 
 All simulations can be replicated by running
+
+**Highly recommended that these scripts are ran on a cluster**. Accompanying PBS scripts can be found under `scripts/`
 
 ```
 Rscript R/simulations/01-mcmc_comparison.R
@@ -48,7 +37,7 @@ Rscript R/simulations/04-sensitivity_design.R
 Rscript R/simulations/05-sensitivity_params.R
 ```
 
-**Highly recommended that these scripts on a cluster**. Accompanying PBS scripts can be found under `scripts/`
+All output is saved to `RData/simulations/`, `RData/comparison/` and `RData/sensitivity/`.
 
 Figures and tables can be reproduced by running
 
@@ -63,12 +52,14 @@ Rscript R/simulations/07-tables.R
 
 To reproduce our models run
 
+**Highly recommended that these scripts are ran on a cluster**
+
 ```
 Rscript R/application/tcga_data.R
 Rscript R/application/yau_models.R
 ```
 
-**Highly recommended that scripts on a cluster**
+Prefit models can be found under `RData/models/`
 
 To reproduce tables and figures run
 
@@ -77,4 +68,16 @@ Rscript R/application/tcga_tables_figures.R
 Rscript R/application/yau_tables_figures.R
 ```
 
+## Results
+
+All our results are saved in `RData/`.
+
+```
+RData/
+├── comparison          # comparison to MCMC
+├── data                # datasets
+├── models              # fit models (real datasets)
+├── sensitivity         # sensitivity analysis
+└── simulations         # simulation study
+```
 
